@@ -33,10 +33,6 @@ img/
   imagem5.jpg
 ```
 
-## 🖼️ Demonstração
-
-![Screenshot do TecBlog](img/imagem1.jpg)
-
 ## 👨‍💻 Autor
 
 Desenvolvido por [Alexsander Leal](https://github.com/Leal86) como parte do processo de aprendizagem.
