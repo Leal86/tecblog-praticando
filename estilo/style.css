@@ -1,0 +1,398 @@
+@charset "UTF-8";
+
+:root {
+/********* Fontes ********/
+
+
+
+/********* Cores *********/
+--fundo-cabecalho-titulos: #F7B602;
+--fundo-body: #E6E6E6;
+--fundo-categorias-rodape: #CCCCCC;
+--titulo-categorias: #565661;
+--cor-logo: #4E4E4E;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--fundo-body);
+    text-align: center;
+}
+
+/******** Página Inicial *****************************************************************************************/
+
+
+header {
+    background-color: var(--fundo-cabecalho-titulos);
+    height: 100px;
+    text-align: center;
+}
+
+div#logo {
+    text-align: center;
+    padding: 15px 0px 18px 0px;
+    font-weight: bolder;
+    color: white;
+    font-size: 0.8em;
+}
+
+#inicio-logo {
+    color: var(--cor-logo);
+}
+
+nav > li {
+    display: inline;
+}
+
+nav > li > a {
+    text-decoration: none;
+    color: var(--cor-logo);
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+nav > li > a:link, a:visited  {
+    color: var(--cor-logo);
+    font-weight: 600;
+}
+
+
+nav > li > a:hover {
+    color: var(--fundo-cabecalho-titulos);
+    background-color: white;
+    border-radius: 3px;
+    transition: 0.3s ease-in-out;
+}
+
+#section-postagens {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0px;
+    width: 95%;
+}
+
+.postagem {
+    width: 55%;
+    margin: 5px 0px 10px 10px;
+    padding: 10px;
+    background-color: white;
+    float: left;
+    text-align: left;
+
+}
+
+h2 {
+    color: var(--fundo-cabecalho-titulos);
+    font-size: 1em;
+}
+
+.data-postagem {
+    font-size: 0.6em;
+}
+
+.img-postagem {
+    width: 100%;
+}
+
+p {
+    font-size: 0.8em;
+    text-align: justify;
+}
+
+.txt-postagem {
+    line-height: 1.5;
+}
+
+.txt-laterais {
+    background-color: white;
+    width: 32%;
+    float: right;
+    margin: 5px 10px 5px 5px;
+}
+
+h5 {
+    background-color: rgb(197, 191, 191);
+    font-size: 0.7em;
+    margin: 5px;
+    padding: 3px;
+    font-weight: 800;
+}
+
+.txt-noticia {
+    padding: 0px 0px 7px 10px;
+    width: 75%;
+}
+
+.link-lateral {
+    color: var(--fundo-cabecalho-titulos)!important;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    font-size: 0.7em;
+    text-align: left;
+}
+
+.link-leia_mais {
+    color: var(--fundo-cabecalho-titulos)!important;
+    text-decoration: none;
+}
+
+footer {
+    clear: both;
+    background-color: var(--cor-logo);
+    padding: 5px;
+    margin: 10px;
+}
+footer > p {
+    text-align: center;
+    color: var(--fundo-body);
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: var(--fundo-cabecalho-titulos)!important;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    #logo > h1 {
+        padding: 5px 0px 0px 0px;
+    }
+
+    body {
+        text-align: center;
+    }
+    
+    #section-postagens {
+        width: 90%;
+    }
+    
+    .postagem {
+        width: 62%;
+        margin: 5px 0px;
+    }
+
+    aside.txt-laterais {
+        max-width: 35%;
+        margin: 5px 0px;
+    }
+
+    p.txt-noticia {
+        font-size: 0.8em;
+    }
+
+    h2 {
+        text-align: left;
+        font-size: 1.2em;
+    }
+
+    footer {
+        width: auto;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    header {
+        height: 15vh;
+    }
+    
+    #logo > h1 {
+        padding: 8px 0px;
+        font-size: 3em;
+    }
+
+    nav > li > a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.1em;
+        padding: 7px;
+    }
+
+    #section-postagens {
+        width: 90%;
+    }
+
+    .postagem {
+        width: 75%;
+        margin: 5px 0px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .data-postagem {
+        font-size: 0.7em;
+    }
+
+    .txt-postagem {
+        font-size: 1em;
+    }
+
+    aside.txt-laterais {
+        max-width: 21%;
+        margin: 5px 0px;
+    }
+
+    h5 {
+        font-size: 0.8em;
+    }
+
+    .txt-noticia {
+        font-size: 0.8em;
+    }
+
+    .link-lateral {
+        font-size: 1em;
+    }
+
+    footer {
+        height: 10vh;
+        margin: 0px;
+    }
+
+    footer > p {
+        font-size: 0.9em;
+        padding: 15px 0px 0px 7px;
+    }
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    header {
+        height: 150px;
+        width: 90%;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 4em;
+        margin: 8px 0px;
+    }
+
+    nav > li > a {
+        font-size: 1.2em;
+        padding: 12px;
+    }
+
+    #section-postagens {
+        width: 90%;
+    }
+
+    .postagem {
+        margin: 10px 0px;
+        width: 70%;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .data-postagem {
+        font-size: 0.8em;
+    }
+
+    .txt-postagem {
+        font-size: 1.1em;
+    }
+
+    .txt-laterais {
+        width: 26%;
+        margin: 10px 0px;
+    }
+
+    h5 {
+        font-size: 1.2em;
+    }
+
+    .txt-noticia {
+        font-size: 1.1em;
+    }
+
+    .link-lateral {
+        font-size: 1.2em;
+    }
+    
+    footer {
+        width: 89.4%;
+        height: 12vh;
+        margin: auto;
+    }
+
+    footer > p {
+        font-size: 1.1em;
+        padding-top: 27px;
+    }
+
+}
+
+@media screen and (min-width: 1201px){
+    header {
+        max-width: 1024px;
+        height: 130px;
+        margin: auto;
+    }
+
+    h1 {
+        font-size: 3.2em;
+        margin-bottom: 5px;
+    }
+
+    nav > li > a {
+        font-size: 1.1em;
+        padding: 10px 15px;
+    }
+
+    #section-postagens {
+        width: 1024px;
+    }
+
+    .postagem {
+        width: 735px;
+        margin: 10px 0px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .data-postagem {
+        font-size: 0.8em;
+    }
+
+    .txt-postagem {
+        font-size: 1em;
+    }
+
+    .txt-laterais {
+        width: 25%;
+        margin: 10px 0px;
+    }
+
+    h5 {
+        font-size: 1.2em;
+    }
+
+    .txt-noticia {
+        font-size: 1em;
+    }
+
+    .link-lateral {
+        font-size: 1.1em;
+    }
+
+    footer {
+        width: 1016px;
+        height: 70px;
+        margin: -5px auto;
+    }
+
+    footer > p {
+        padding: 10px 0px;
+    }
+}
